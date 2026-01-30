@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+setup.md 
+sol.md 
+/deploy/crds/*
+kopf-env/*
+
+# OS X
+.DS_Store
+
+# Kubernetes/Certs
+*.kubeconfig
+*.pem
+*.key
+
