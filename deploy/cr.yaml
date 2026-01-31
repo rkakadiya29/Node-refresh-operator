@@ -1,0 +1,12 @@
+---
+apiVersion: stable.rk.ai/v1
+kind: NodeRefresh
+metadata:
+  name: quick-cycle-test
+spec:
+  targetNodeLabels:
+    tier: worker
+  maxPodsToMoveAtOnce: 2
+  minHealthThreshold: 80
+  # he timer in Python runs every 45s, 
+  # age limit is set to 180s (3 mins) in code.

@@ -5,7 +5,7 @@ metadata:
   name: node-refresh-operator-role
 rules:
   # Permissions for the Custom Resource itself
-  - apiGroups: ["stable.hippocraticai.com"]
+  - apiGroups: ["stable.rk.ai"]
     resources: ["noderefreshes", "noderefreshes/status"]
     verbs: ["get", "list", "watch", "patch"]
   
@@ -15,7 +15,7 @@ rules:
     verbs: ["get", "list", "watch", "patch"]
   
   # Permissions for Eviction and Pod health checks
-  - apiGroups: [""]
+  - apiGroups: ["", "policy"]
     resources: ["pods", "pods/eviction"]
     verbs: ["get", "list", "create"]
   
